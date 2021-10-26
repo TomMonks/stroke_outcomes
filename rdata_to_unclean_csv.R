@@ -1,0 +1,7 @@
+library(readr)
+SSNAP.r <- readRDS("../stroke_data/ssnap.RData")
+OUTCOMES.r <- readRDS("../stroke_data/HERMES.RData")
+DEATH.r <- readRDS("../stroke_data/gg2.deaths.RData")
+write.csv(SSNAP.r, '../stroke_data/SSNAP.csv')
+write.csv(OUTCOMES.r, '../stroke_data/OUTCOMES.csv')
+write_csv(DEATH.r, '../stroke_data/DEATH.csv')
